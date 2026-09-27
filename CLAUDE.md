@@ -85,5 +85,7 @@ Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.m
 - `scripts/voiceover.py`: narration. Kokoro TTS voice lines timed per shot (default voice `af_heart`),
   or a recorded voice memo (`{"src": …}`). Captions follow the narration, using the exact script wording.
 - `scripts/export_reel.sh`: quick single-file conversion to spec.
+- `scripts/fit_for_chat.sh`: the Claude app caps files at **30 MB**. Run this on any finished video
+  over that and send the `_share.mp4` copy (still well above what Instagram keeps).
 - `scripts/setup.sh` installs ffmpeg, Whisper (auto-captions), librosa (beat detection) and fonts. A SessionStart
 hook in `.claude/settings.json` runs it automatically in cloud sessions.
