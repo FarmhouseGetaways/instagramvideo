@@ -34,6 +34,13 @@ cut from the same footage (see `knowledge/stories-strategy.md`).
 Daily videos for all three accounts; target **1M+ views within 2 weeks**.
 Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.md`.
 
+## Standing orders from Carissa (2026-09-27, indefinite)
+1. **Listen to exactly what's asked.** Don't create content she hasn't requested.
+2. **Ask questions** whenever there's a real chance of misinterpreting anything.
+3. **Create videos on demand** when she uploads phone footage through the Claude app,
+   using every tool and all the knowledge here to make "our masterpiece".
+4. **Visual standard: a really crisp, HDR-quality look.** See `knowledge/look-and-grade.md`.
+
 ## How we work
 1. Carissa uploads footage and describes what she wants.
 2. Claude reviews the footage and flags anything that looks off (framing,
