@@ -23,6 +23,9 @@ Instagram's interface covers parts of the frame. Keep text and faces out of:
 - **Top ~220 px**: header and "Reels" label
 - **Bottom ~420 px**: caption, audio label, username
 - **Right ~140 px**: like/comment/share buttons
+- **Stories** have different overlays: keep clear of the **top ~250 px**
+  (progress bar, profile name) and **bottom ~340 px** (reply bar / link sticker).
+  Leave room in the middle-lower third for poll/question/link stickers added in-app.
 - For the 3:4 grid crop, keep the key cover content in the **middle 1440 px**.
 
 ## Other placements

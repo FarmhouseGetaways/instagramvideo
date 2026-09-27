@@ -20,6 +20,20 @@ IMM = Industrial Mini Mansion · FG = Farmhouse Getaways · FCF = Full Circle Fa
 Instagram blocks logged-out viewing, so Claude can't browse these profiles.
 Style knowledge comes from what Carissa shares and from `brand.md`.
 
+## Posting mix (Carissa's priority order)
+1. **Stories**: the dominant format
+2. **Reels**
+3. **Trial Reels**
+4. Feed posts
+
+Stories mostly reach existing followers. Growth to non-followers comes from Reels
+and Trial Reels, so every shoot should produce **both** a Story set and a Reel
+cut from the same footage (see `knowledge/stories-strategy.md`).
+
+## Goal (set 2026-09-27)
+Daily videos for all three accounts; target **1M+ views within 2 weeks**.
+Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.md`.
+
 ## How we work
 1. Carissa uploads footage and describes what she wants.
 2. Claude reviews the footage and flags anything that looks off (framing,
@@ -43,6 +57,16 @@ Style knowledge comes from what Carissa shares and from `brand.md`.
 - Refresh `knowledge/` whenever research finds newer info, and update its
   "last checked" date.
 
+## Access & credentials
+- Never commit passwords or tokens to this repo.
+- Browser work on Instagram goes through Carissa's own logged-in browser
+  (Claude in Chrome / the desktop app's built-in browser), not a scripted login.
+- API tokens (publishing + Insights) live in the cloud environment's settings as
+  `IG_TOKEN_MBM`, `IG_TOKEN_FG`, `IG_TOKEN_FFF`. See `docs/instagram-api-setup.md`.
+
 ## Tooling
-`scripts/setup.sh` installs ffmpeg and Whisper (auto-captions). A SessionStart
+- `scripts/make_reel.py plan.json`: the editing engine (Reels + Stories, captions,
+  hook variants, beat-timed cuts, cover frame). Plan format: `scripts/PLAN_FORMAT.md`.
+- `scripts/export_reel.sh`: quick single-file conversion to spec.
+- `scripts/setup.sh` installs ffmpeg, Whisper (auto-captions), librosa (beat detection) and fonts. A SessionStart
 hook in `.claude/settings.json` runs it automatically in cloud sessions.
