@@ -1,0 +1,31 @@
+{
+  "format": "reel",
+  "output": "work/out/fg/2026-10-02_money-cant-buy_reel.mp4",
+  "captions": false,
+  "mute_output": true,
+  "beats": {
+    "bpm": 120,
+    "every": 5
+  },
+  "clips": [
+    {
+      "src": "work/raw/fg/5sec_ranchdrive_fly.mp4",
+      "in": 0.0,
+      "text": "Money can't buy happiness\u2026"
+    },
+    {
+      "src": "work/raw/fg/5sec_RBR_Flyover.mp4",
+      "in": 0.5,
+      "text": "\u2026but it can buy 2 nights at a ranch with no Wi-Fi"
+    },
+    {
+      "src": "work/raw/fg/5sec_reversefly_rbrdrive.mp4",
+      "in": 0.5,
+      "text": "and that's basically the same thing"
+    }
+  ],
+  "style": {
+    "text_size": 86
+  },
+  "cover": 3.0
+}

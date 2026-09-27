@@ -1,0 +1,35 @@
+{
+  "format": "reel",
+  "output": "work/out/fg/2026-10-03_this-is-your-sign_reel.mp4",
+  "captions": false,
+  "mute_output": true,
+  "hook": {
+    "text": "This is your sign to book the fall trip your group chat keeps talking about",
+    "dur": 7.4
+  },
+  "style": {
+    "hook_style": "box"
+  },
+  "clips": [
+    {
+      "src": "work/raw/fg/5sec_reversefly_rbrdrive.mp4",
+      "in": 0.3,
+      "out": 2.8
+    },
+    {
+      "src": "work/raw/fg/5sec_RBR_Flyover.mp4",
+      "in": 1.0,
+      "out": 3.5
+    },
+    {
+      "src": "work/raw/fg/5sec_ranchdrive_fly.mp4",
+      "in": 0.8,
+      "out": 3.3
+    }
+  ],
+  "end_text": {
+    "text": "Send this to them",
+    "dur": 1.5
+  },
+  "cover": 1.0
+}
