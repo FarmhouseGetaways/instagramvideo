@@ -1,0 +1,15 @@
+# Media is too large for git; only notes are tracked
+*.mp4
+*.mov
+*.MOV
+*.MP4
+*.m4a
+*.mp3
+*.wav
+*.aac
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.HEIC
+work/
