@@ -49,6 +49,9 @@ Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.m
    (things she liked, changed, or rejected).
 
 ## Rules
+- **Every document for Carissa** (plans, strategy, research, hook/idea lists,
+  documentation, business info) is also delivered as a **downloadable PDF**.
+  Build it with `scripts/md_to_pdf.py` and send it with SendUserFile.
 - Media files (video/audio/images) are **not** committed; they're too large
   for git. Commit project notes (`projects/<date>-<slug>/notes.md`) only.
 - Export with `scripts/export_reel.sh` so every file meets the specs in

@@ -1,0 +1,46 @@
+{
+  "format": "story",
+  "output": "work/out/fg/2026-10-01_where-are-you_story.mp4",
+  "fit": "crop",
+  "captions": false,
+  "mute_output": true,
+  "clips": [
+    {
+      "src": "work/raw/fg/5sec_RBR_Flyover.mp4",
+      "in": 0.3,
+      "out": 3.1
+    },
+    {
+      "src": "work/raw/fg/5sec_ranchdrive_fly.mp4",
+      "in": 0.5,
+      "out": 3.1
+    },
+    {
+      "src": "work/raw/fg/5sec_reversefly_rbrdrive.mp4",
+      "in": 0.8,
+      "out": 4.9
+    }
+  ],
+  "overlays": [
+    {
+      "src": "work/fg1/bubble1.png",
+      "start": 0.0,
+      "x": "left",
+      "y": 330,
+      "fade": 0.01
+    },
+    {
+      "src": "work/fg1/bubble2.png",
+      "start": 1.2,
+      "x": "right",
+      "y": 470
+    },
+    {
+      "src": "work/fg1/bubble3.png",
+      "start": 2.3,
+      "x": "right",
+      "y": 610
+    }
+  ],
+  "cover": 3.0
+}

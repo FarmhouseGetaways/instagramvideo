@@ -322,10 +322,23 @@ def render_final(plan, joined, ass_path, out, total, fmt, tmp):
     else:
         af = "[0:a]"
     af += "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[a]"
+    # PNG overlays (chat bubbles, logos) that fade in at "start" and stay until "end"
+    last = "v"
+    vf = f"[0:v]ass={ass_path}[v]"
+    for k, ov in enumerate(plan.get("overlays", [])):
+        idx = inputs.count("-i")
+        inputs += ["-loop", "1", "-t", f"{total:.3f}", "-i", ov["src"]]
+        start, end = ov.get("start", 0.0), ov.get("end", total)
+        x = ov.get("x", "(W-w)/2")
+        x = {"left": "60", "right": "W-w-60", "center": "(W-w)/2"}.get(x, x)
+        vf += (f";[{idx}:v]format=rgba,fade=t=in:st={start}:d={ov.get('fade', 0.15)}:alpha=1[o{k}]"
+               f";[{last}][o{k}]overlay=x={x}:y={ov.get('y', 400)}:enable='between(t,{start},{end})'[v{k}]")
+        last = f"v{k}"
     audio = ["-map", "[a]", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2"]
     if plan.get("mute_output"):
         audio = ["-an"]
-    common = ["-filter_complex", f"{vf};{af}", "-map", "[v]", *audio, *X264,
+    graph = vf if plan.get("mute_output") else f"{vf};{af}"
+    common = ["-filter_complex", graph, "-map", f"[{last}]", *audio, *X264,
               "-preset", "slow", "-crf", "18", "-maxrate", "25M", "-bufsize", "50M", "-r", "30"]
 
     if fmt == "story" and total > STORY_MAX_SEG:

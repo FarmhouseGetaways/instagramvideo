@@ -6,5 +6,6 @@ if ! command -v ffmpeg >/dev/null; then
 fi
 fc-list | grep -qi montserrat || apt-get install -y -qq fonts-montserrat >/dev/null 2>&1 || echo "font install failed" >&2
 python3 -c "import librosa" 2>/dev/null || pip install -q librosa >/dev/null 2>&1 || echo "librosa install failed" >&2
+python3 -c "import PIL" 2>/dev/null || pip install -q pillow >/dev/null 2>&1 || echo "pillow install failed" >&2
 python3 -c "import whisper" 2>/dev/null || pip install -q openai-whisper >/dev/null 2>&1 || echo "whisper install failed" >&2
 exit 0

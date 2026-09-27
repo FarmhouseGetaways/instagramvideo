@@ -1,0 +1,32 @@
+{
+  "format": "reel",
+  "output": "work/out/fg/2026-10-01_tag-who_trial.mp4",
+  "fit": "crop",
+  "captions": false,
+  "mute_output": true,
+  "clips": [
+    {
+      "src": "work/raw/fg/5sec_RBR_Flyover.mp4",
+      "in": 0.3,
+      "out": 3.1
+    },
+    {
+      "src": "work/raw/fg/5sec_ranchdrive_fly.mp4",
+      "in": 0.5,
+      "out": 3.1
+    },
+    {
+      "src": "work/raw/fg/5sec_reversefly_rbrdrive.mp4",
+      "in": 0.8,
+      "out": 4.9
+    }
+  ],
+  "cover": 3.0,
+  "hook": {
+    "text": "Tag who you're bringing to the ranch. You only get one.",
+    "dur": 9.6
+  },
+  "style": {
+    "hook_style": "box"
+  }
+}
