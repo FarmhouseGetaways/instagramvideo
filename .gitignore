@@ -13,3 +13,4 @@
 *.heic
 *.HEIC
 work/
+__pycache__/
