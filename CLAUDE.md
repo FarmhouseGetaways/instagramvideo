@@ -84,6 +84,10 @@ Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.m
   hook variants, beat-timed cuts, cover frame). Plan format: `scripts/PLAN_FORMAT.md`.
 - `scripts/voiceover.py`: narration. Kokoro TTS voice lines timed per shot (default voice `af_heart`),
   or a recorded voice memo (`{"src": …}`). Captions follow the narration, using the exact script wording.
+- **Voice clone (in progress):** Carissa wants her own voice cloned for narration. Plan: Chatterbox
+  (open source, MIT license, runs here) from a 60–90s voice memo (`docs/voice-clone-recording-guide.md`).
+  Upgrade to ElevenLabs if quality falls short. That needs `ELEVENLABS_API_KEY` in the environment settings.
+  Only generate lines she has approved. Tell her to use Instagram's AI label on cloned-voice posts.
 - `scripts/export_reel.sh`: quick single-file conversion to spec.
 - `scripts/fit_for_chat.sh`: the Claude app caps files at **30 MB**. Run this on any finished video
   over that and send the `_share.mp4` copy (still well above what Instagram keeps).
