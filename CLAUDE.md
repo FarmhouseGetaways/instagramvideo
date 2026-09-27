@@ -88,6 +88,10 @@ Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.m
   (open source, MIT license, runs here) from a 60–90s voice memo (`docs/voice-clone-recording-guide.md`).
   Upgrade to ElevenLabs if quality falls short. That needs `ELEVENLABS_API_KEY` in the environment settings.
   Only generate lines she has approved. Tell her to use Instagram's AI label on cloned-voice posts.
+  **Voice sample storage (approved 2026-09-27):** Google Drive → `Claude Instagram Studio/Voice Sample (private)`
+  (folder id `1UG2Y046QnQnS_bLrEUTDlPyS9ZqzBVWb`). Never commit it to git. Keep the file under 10 MB
+  (the Drive connector's limit), so convert the memo to mono 24 kHz WAV/FLAC first.
+  Pronunciation list: `accounts/pronunciations.md` (waiting on Carissa).
 - `scripts/export_reel.sh`: quick single-file conversion to spec.
 - `scripts/fit_for_chat.sh`: the Claude app caps files at **30 MB**. Run this on any finished video
   over that and send the `_share.mp4` copy (still well above what Instagram keeps).
