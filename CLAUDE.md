@@ -49,6 +49,11 @@ Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.m
    (things she liked, changed, or rejected).
 
 ## Rules
+- **Never state a fact about a business, property or Carissa's life that isn't confirmed** in that
+  account's `brand.md` "Confirmed facts". This covers amenities, Wi-Fi, animals, availability,
+  prices and numbers. If a line depends on one, ask first. Tone guesses are fine to suggest; facts aren't.
+- **Don't make posts from old footage found in Drive unless Carissa asks.** Wait for
+  fresh footage and her brief.
 - **Every document for Carissa** (plans, strategy, research, hook/idea lists,
   documentation, business info) is also delivered as a **downloadable PDF**.
   Build it with `scripts/md_to_pdf.py` and send it with SendUserFile.

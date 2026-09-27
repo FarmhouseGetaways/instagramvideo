@@ -1,3 +1,5 @@
+> **SHELVED (2026-09-27): do not post.** Carissa: the footage is old and stale, and the edit wasn't up to standard.
+
 # FG Post Kits: Oct 2 & Oct 3
 
 ## Oct 2: "Money can't buy happiness…" (7.5s, silent: add sound in-app)
@@ -13,7 +15,7 @@ usually usable by Business accounts). Each line of text changes on the beat: cut
 
 **Sound:** search "Money can't buy you happiness" in Reels audio and pick the original-audio version.
 Line the first text change up with the first beat.
-**Story:** share the Reel with a poll: "Happiness or Wi-Fi?"
+**Story:** share the Reel with a poll: "Weekend at the ranch?" → "Yes please" / "Already packing"
 
 ---
 
@@ -22,13 +24,13 @@ Line the first text change up with the first beat.
 **File:** `2026-10-03_this-is-your-sign_reel.mp4` + cover
 
 **Caption**
-> This is your sign 🍂 The group chat has been "planning" a fall trip since August. Red Barn Ranch has
-> October dates open. Send this to the group chat and make it official.
+> This is your sign 🍂 The group chat has been "planning" a fall trip since August. Check Red Barn Ranch
+> dates at the link in bio, then send this to the group chat and make it official.
 >
 > #fallgetaway #farmstay #groupgetaway #vacationrental #redbarnranch
 
 **Sound:** a cozy acoustic track from the Meta Sound Collection, or a "This is your sign" trend audio if it's available to this account.
-**Story:** the Reel plus a link sticker to October availability, and a question box: "Who are you bringing?"
+**Story:** the Reel plus a link sticker to the booking page, and a question box: "Who are you bringing?"
 
 ---
 **Footage note:** both use the same 720p spring drone clips as Day 1. After 3 days, viewers will
