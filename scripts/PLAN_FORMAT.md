@@ -5,6 +5,7 @@
   "format": "reel",                    // "reel" or "story" (safe zones differ; stories split into <60s parts)
   "output": "work/out/mbm-2026-10-01.mp4",
   "fit": "crop",                       // default for all clips: "crop" fills 9:16, "blur" shows the whole frame
+  "grade": "crisp",                    // house look (knowledge/look-and-grade.md); "none" to skip; per-clip override allowed
   "hook": {"text": "This was $4 at an estate sale", "dur": 2.5},
   "hook_variants": ["This was $4 at an estate sale", "Guess what I priced this at"],  // Trial Reel A/B: renders _v1, _v2…
   "captions": "auto",                  // Whisper word-by-word captions; false to skip

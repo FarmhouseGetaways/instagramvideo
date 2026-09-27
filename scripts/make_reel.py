@@ -81,9 +81,21 @@ def fit_filter(fit):
     if fit == "blur":
         return ("split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,"
                 "crop=1080:1920,boxblur=30:5[bg];[b]scale=1080:1920:force_original_aspect_ratio="
-                "decrease[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2")
-    return "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
+                "decrease:flags=lanczos[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2")
+    return "scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920"
 
+
+# Carissa's house look: crisp, vivid "HDR style" graded for SDR so it reads the same on every phone.
+# Order matters: denoise first (sharpening amplifies phone noise), then tone/color, then clarity and detail.
+GRADES = {
+    "crisp": ("hqdn3d=1.5:1.5:4:4,"
+              "curves=master='0/0.01 0.15/0.18 0.5/0.53 0.85/0.87 1/0.98',"  # HDR-style: lift shadows, roll off highlights
+              "eq=contrast=1.03:saturation=1.12,"
+              "vibrance=intensity=0.18,"                                # lifts muted colors more than already-vivid ones
+              "unsharp=lx=13:ly=13:la=0.50:cx=13:cy=13:ca=0,"          # clarity (local contrast)
+              "unsharp=lx=5:ly=5:la=0.65:cx=5:cy=5:ca=0"),             # fine detail
+    "none": "",
+}
 
 TONEMAP = ("zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,"
            "tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,")
@@ -104,7 +116,7 @@ def beat_durations(beats, count):
     return [b - a for a, b in zip(cuts, cuts[1:])][:count]
 
 
-def render_clip(clip, idx, default_fit, tmp):
+def render_clip(clip, idx, default_fit, tmp, default_grade="crisp"):
     src = clip["src"]
     out = os.path.join(tmp, f"clip{idx:03d}.mp4")
     fit = clip.get("fit", default_fit)
@@ -117,7 +129,9 @@ def render_clip(clip, idx, default_fit, tmp):
         # Slow push-in so still photos don't feel static
         vf = (f"scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840,"
               f"zoompan=z='min(1+0.0015*on,1.15)':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2'"
-              f":d={frames}:s=1080x1920:fps=30,format=yuv420p,setsar=1")
+              f":d={frames}:s=1080x1920:fps=30,"
+              + (GRADES[clip.get("grade", default_grade)] + "," if GRADES[clip.get("grade", default_grade)] else "")
+              + "format=yuv420p,setsar=1")
         run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", src,
              "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
              "-filter_complex", f"[0:v]{vf}[v]", "-map", "[v]", "-map", "1:a",
@@ -133,6 +147,9 @@ def render_clip(clip, idx, default_fit, tmp):
     dur = src_len / speed
 
     vf = (TONEMAP if info["hdr"] else "") + fit_filter(fit)
+    grade = GRADES[clip.get("grade", default_grade)]
+    if grade:
+        vf += "," + grade
     vf += f",setpts=(PTS-STARTPTS)/{speed},fps=30,format=yuv420p,setsar=1"
     use_audio = info["has_audio"] and not clip.get("mute", False)
     inputs = ["-ss", f"{t_in:.3f}", "-t", f"{src_len:.3f}", "-i", src]
@@ -269,7 +286,7 @@ def main():
 
     parts, spans, t = [], [], 0.0
     for i, clip in enumerate(clips):
-        path, dur = render_clip(clip, i, plan.get("fit", "crop"), tmp)
+        path, dur = render_clip(clip, i, plan.get("fit", "crop"), tmp, plan.get("grade", "crisp"))
         parts.append(path)
         spans.append((t, t + dur))
         t += dur
