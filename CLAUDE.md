@@ -82,6 +82,8 @@ Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.m
 ## Tooling
 - `scripts/make_reel.py plan.json`: the editing engine (Reels + Stories, captions,
   hook variants, beat-timed cuts, cover frame). Plan format: `scripts/PLAN_FORMAT.md`.
+- `scripts/voiceover.py`: narration. Kokoro TTS voice lines timed per shot (default voice `af_heart`),
+  or a recorded voice memo (`{"src": …}`). Captions follow the narration, using the exact script wording.
 - `scripts/export_reel.sh`: quick single-file conversion to spec.
 - `scripts/setup.sh` installs ffmpeg, Whisper (auto-captions), librosa (beat detection) and fonts. A SessionStart
 hook in `.claude/settings.json` runs it automatically in cloud sessions.

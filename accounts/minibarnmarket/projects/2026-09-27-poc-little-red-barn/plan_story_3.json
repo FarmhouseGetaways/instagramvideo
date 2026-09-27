@@ -1,0 +1,21 @@
+{
+  "format": "story",
+  "output": "work/out/poc/MBM_story_frame3.mp4",
+  "hook": {
+    "text": "Who's coming next time?",
+    "dur": 20
+  },
+  "style": {
+    "hook_style": "box"
+  },
+  "captions": false,
+  "clips": [
+    {
+      "src": "work/raw/upload1/IMG_9817.mov",
+      "in": 0.0,
+      "out": 2.8,
+      "speed": 0.8
+    }
+  ],
+  "cover": 1.0
+}

@@ -258,6 +258,14 @@ def chunk_words(words, max_words):
         yield chunk
 
 
+def align_to_script(words, script):
+    """Keep Whisper's timings but use the exact script wording when the word counts line up."""
+    script_words = script.split()
+    if script_words and len(script_words) == len(words):
+        return [{**w, "word": sw} for w, sw in zip(words, script_words)]
+    return words
+
+
 def transcribe(path, model_name):
     import whisper
     model = whisper.load_model(model_name)
@@ -299,9 +307,21 @@ def main():
     run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0",
          "-i", listfile, "-c", "copy", joined])
 
+    vo_wav = None
+    if plan.get("voiceover"):
+        import voiceover
+        vo_wav = os.path.join(tmp, "vo.wav")
+        placed = voiceover.build(plan["voiceover"], vo_wav)
+        for start, end, text in placed:
+            print(f"VO {start:6.2f}-{end or 0:6.2f}  {text}", file=sys.stderr)
+        if placed[-1][1] and placed[-1][1] > total:
+            print(f"WARNING: narration ends at {placed[-1][1]:.2f}s but video is {total:.2f}s", file=sys.stderr)
+
     words = []
     if plan.get("captions") == "auto":
-        words = transcribe(joined, plan.get("whisper_model", "small"))
+        words = transcribe(vo_wav or joined, plan.get("whisper_model", "small"))
+        script = " ".join(l["text"] for l in plan.get("voiceover", {}).get("lines", []))
+        words = align_to_script(words, script)
         with open(os.path.splitext(output)[0] + "_transcript.txt", "w") as f:
             f.write(" ".join(w["word"].strip() for w in words) + "\n")
 
@@ -315,7 +335,7 @@ def main():
         with open(ass_path, "w") as f:
             f.write(build_ass(variant, style, fmt, spans, words, total))
         out = output if len(hooks) == 1 else output.replace(".mp4", f"_v{n + 1}.mp4")
-        outputs += render_final(plan, joined, ass_path, out, total, fmt, tmp)
+        outputs += render_final(plan, joined, ass_path, out, total, fmt, tmp, vo_wav)
 
     cover_t = plan.get("cover", min(1.0, total / 2))
     cover = os.path.splitext(outputs[0])[0] + "_cover.jpg"
@@ -327,17 +347,25 @@ def main():
     print(cover)
 
 
-def render_final(plan, joined, ass_path, out, total, fmt, tmp):
+def render_final(plan, joined, ass_path, out, total, fmt, tmp, vo_wav=None):
     inputs = ["-i", joined]
-    vf = f"[0:v]ass={ass_path}[v]"
+    vo = plan.get("voiceover") or {}
+    stems = [f"[0:a]volume={vo.get('ambient_volume', 1.0) if vo_wav else 1.0}[amb]"]
+    labels = ["[amb]"]
+    if vo_wav:
+        idx = inputs.count("-i")
+        inputs += ["-i", vo_wav]
+        stems.append(f"[{idx}:a]aresample=48000,aformat=channel_layouts=stereo,volume={vo.get('volume', 1.0)},apad[vo]")
+        labels.append("[vo]")
     music = plan.get("music")
     if music:
+        idx = inputs.count("-i")
         inputs += ["-ss", str(music.get("start", 0)), "-i", music["src"]]
-        vol = music.get("volume", 0.35)
-        af = (f"[1:a]volume={vol},atrim=0:{total:.3f},afade=t=out:st={max(0, total - 1.5):.3f}:d=1.5[m];"
-              f"[0:a][m]amix=inputs=2:duration=first:normalize=0,")
-    else:
-        af = "[0:a]"
+        stems.append(f"[{idx}:a]aresample=48000,aformat=channel_layouts=stereo,volume={music.get('volume', 0.35)},"
+                     f"atrim=0:{total:.3f},afade=t=out:st={max(0, total - 1.5):.3f}:d=1.5,apad[m]")
+        labels.append("[m]")
+    af = ";".join(stems) + ";" + "".join(labels)
+    af += (f"amix=inputs={len(labels)}:duration=first:normalize=0," if len(labels) > 1 else "anull,")
     af += "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[a]"
     # PNG overlays (chat bubbles, logos) that fade in at "start" and stay until "end"
     last = "v"

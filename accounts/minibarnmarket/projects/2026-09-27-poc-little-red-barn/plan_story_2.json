@@ -1,0 +1,21 @@
+{
+  "format": "story",
+  "output": "work/out/poc/MBM_story_frame2.mp4",
+  "hook": {
+    "text": "Coffee in hand. Line already forming.",
+    "dur": 20
+  },
+  "style": {
+    "hook_style": "box"
+  },
+  "captions": false,
+  "clips": [
+    {
+      "src": "work/raw/upload1/IMG_9817.mov",
+      "in": 3.0,
+      "out": 5.6,
+      "speed": 0.8
+    }
+  ],
+  "cover": 1.0
+}

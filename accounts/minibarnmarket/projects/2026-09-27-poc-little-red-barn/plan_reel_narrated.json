@@ -1,0 +1,55 @@
+{
+  "format": "reel",
+  "output": "work/out/poc/MBM_little-red-barn_narrated.mp4",
+  "hook": {
+    "text": "The line for this little red barn\u2026",
+    "dur": 2.8
+  },
+  "captions": "auto",
+  "clips": [
+    {
+      "src": "work/raw/upload1/IMG_9817.mov",
+      "in": 5.8,
+      "out": 8.8
+    },
+    {
+      "src": "work/raw/upload1/IMG_9817.mov",
+      "in": 0.2,
+      "out": 3.2
+    },
+    {
+      "src": "work/raw/upload1/IMG_9817.mov",
+      "in": 3.2,
+      "out": 5.6
+    },
+    {
+      "src": "work/raw/upload1/IMG_9817.mov",
+      "in": 8.4,
+      "out": 9.7
+    }
+  ],
+  "voiceover": {
+    "voice": "af_heart",
+    "speed": 0.95,
+    "ambient_volume": 0.35,
+    "lines": [
+      {
+        "text": "There's a little red barn\u2026",
+        "at": 0.4
+      },
+      {
+        "text": "and on market mornings, it doesn't stay quiet for long.",
+        "at": 2.7
+      },
+      {
+        "text": "Grab a coffee\u2026 and maybe come early.",
+        "at": 6.5
+      }
+    ]
+  },
+  "end_text": {
+    "text": "Send this to your market buddy",
+    "dur": 1.6
+  },
+  "cover": 1.6
+}

@@ -2,6 +2,11 @@
 
 _Fill in from Carissa's answers. Update after every project with what she liked or changed._
 
+## Confirmed facts (only state what's listed here; ask about anything else)
+- Carissa owns Mini Barn Market.
+- Visible in her Sept 2026 footage: a red mini barn with the "Mini Barn Market" logo, a "General Store" sign,
+  a free seed library box, and customers lining up on a market morning.
+
 ## Basics
 - What the account is about:
 - Target viewer:

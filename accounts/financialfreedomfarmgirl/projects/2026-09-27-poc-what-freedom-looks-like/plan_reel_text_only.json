@@ -1,0 +1,46 @@
+{
+  "format": "reel",
+  "output": "work/out/poc/FFF_what-freedom-looks-like_text-only.mp4",
+  "hook": {
+    "text": "What financial freedom actually looks like:",
+    "dur": 2.2
+  },
+  "style": {
+    "hook_style": "box",
+    "text_size": 92
+  },
+  "captions": false,
+  "mute_output": true,
+  "beats": {
+    "bpm": 110,
+    "every": 4
+  },
+  "clips": [
+    {
+      "src": "work/raw/upload1/IMG_5348.mov",
+      "in": 0.3,
+      "text": "Not a yacht."
+    },
+    {
+      "src": "work/raw/upload1/IMG_5350.mov",
+      "in": 0.3,
+      "text": "Slow mornings."
+    },
+    {
+      "src": "work/raw/upload1/IMG_5317.mov",
+      "in": 0.8,
+      "text": "Little moments."
+    },
+    {
+      "src": "work/raw/upload1/IMG_9817.mov",
+      "in": 6.2,
+      "text": "Something of my own."
+    },
+    {
+      "src": "work/raw/upload1/IMG_9604.mov",
+      "in": 0.3,
+      "text": "Evenings like this."
+    }
+  ],
+  "cover": 0.5
+}
