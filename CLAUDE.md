@@ -2,7 +2,7 @@
 
 This repo is Claude's long-term memory for Carissa's Instagram video work.
 Cloud sessions start from scratch, so **anything worth remembering must be written
-here and pushed**. Read this file, then the relevant `knowledge/` and
+here and pushed**. Read this file (and the latest `docs/handoff-*.md`), then the relevant `knowledge/` and
 `accounts/<account>/brand.md` files, before starting any edit.
 
 ## Who I work for
@@ -66,6 +66,8 @@ built-in browser, or computer use. A cloud session can't, so say so and prepare 
 - **Never state a fact about a business, property or Carissa's life that isn't confirmed** in that
   account's `brand.md` "Confirmed facts". This covers amenities, Wi-Fi, animals, availability,
   prices and numbers. If a line depends on one, ask first. Tone guesses are fine to suggest; facts aren't.
+- **No Google Drive for handing over files** (Carissa, 2026-10-04). She uploads straight into the chat,
+  5 at a time. (The Drive connector can't see stars and caps files at 10 MB.)
 - **Don't make posts from old footage found in Drive unless Carissa asks.** Wait for
   fresh footage and her brief.
 - **Every document for Carissa** (plans, strategy, research, hook/idea lists,
