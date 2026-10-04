@@ -95,3 +95,8 @@ All carousel files moved from `Downloads/MR carousel` to `Z:/Farmhouse Getaways/
 - Numbered lists in chat were hard for Cory to write. The lettered picture key (`MR_Carousel_Picture_Key_V1.jpg`, A–N) is the way
   to ask for slide orders now: "letter: text", one per line, in order.
 - Built in Instagram, stopped at Share, AI label on. Threads cross-post still off (caption 522 chars).
+
+## V9: 8 slides (Oct 4, Cory)
+Dropped the lounge and the bridge ("Experience Mountain Retreat…"). The lounge's NES/Xbox line moved onto the arcade slide,
+and slide 2 now ends "…at the base of Iron Mountain". Plan `plan_carousel_v9.json`, slides on Z: `MR Carousel/slides_V9/`,
+review PDF `MR_Carousel_Review_V5.pdf`. Rebuilt in Instagram, stopped at Share.

@@ -1,0 +1,77 @@
+{
+  "output_dir": "work/out/mr_carousel_v9",
+  "ratio": "4:5",
+  "grade": "crisp",
+  "slides": [
+    {
+      "src": "work/raw/mr_carousel/03.png",
+      "text": {
+        "text": "Did you know there's a vacation rental in San Diego that has its own disc golf course??",
+        "position": "top",
+        "size": 64
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/01.jpg",
+      "focus_x": 0.47,
+      "text": {
+        "text": "A private course on a beautiful 8-acre property at the base of Iron Mountain",
+        "position": "top",
+        "size": 64
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/10.png",
+      "focus_x": 0.5,
+      "text": {
+        "text": "The 19th hole: an '80s-style game pub, complete with a video game museum. Arcade games, NES at the booth and over 100 of the latest Xbox games.",
+        "position": "top",
+        "size": 52
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/02.png",
+      "focus_x": 0.42,
+      "text": {
+        "text": "Night play unlocked. After the San Diego courses close, return home and play 24/7 at Boulder Oak.",
+        "position": "top",
+        "size": 56
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/w1_hero.png",
+      "grade": "none",
+      "text": {
+        "text": "The Boulder Oak course is exclusive to guests of Mountain Retreat.",
+        "position": "bottom",
+        "size": 58
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/06.png",
+      "text": {
+        "text": "24/7 play right out the back door.",
+        "position": "top",
+        "size": 64
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/w3_map.png",
+      "grade": "none",
+      "text": {
+        "text": "Keep score on UDisc, or use our custom scorecard that emails everyone a beautiful keepsake with round stats.",
+        "position": "bottom",
+        "size": 52
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/05.png",
+      "focus_y": 0.55,
+      "text": {
+        "text": "Views and hiking for days: Iron Mountain and Mount Woodson trails are 3 miles away.",
+        "position": "top",
+        "size": 58
+      }
+    }
+  ]
+}
