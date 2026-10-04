@@ -92,6 +92,8 @@ Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.m
   (folder id `1UG2Y046QnQnS_bLrEUTDlPyS9ZqzBVWb`). Never commit it to git. Keep the file under 10 MB
   (the Drive connector's limit), so convert the memo to mono 24 kHz WAV/FLAC first.
   Pronunciation list: `accounts/pronunciations.md` (waiting on Carissa).
+- `scripts/make_carousel.py plan.json`: carousel slides from photos. 4:5 (1080×1350) crops with per-slide focus,
+  the same crisp grade as the videos, and an optional slide-1 hook.
 - `scripts/export_reel.sh`: quick single-file conversion to spec.
 - `scripts/fit_for_chat.sh`: the Claude app caps files at **30 MB**. Run this on any finished video
   over that and send the `_share.mp4` copy (still well above what Instagram keeps).

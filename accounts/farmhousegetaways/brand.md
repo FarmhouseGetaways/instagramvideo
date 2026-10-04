@@ -5,6 +5,12 @@ _Fill in from Carissa's answers. Update after every project with what she liked 
 ## Confirmed facts (only state what's listed here; ask about anything else)
 - **Strong connectivity / good Wi-Fi is a selling point. Guests demand it.** Never use
   "no Wi-Fi", "unplug" or "off the grid" angles.
+- **Mountain Retreat** (from Carissa and Cory's own site, boulderoakdiscgolf.com, and its README): Ramona, CA ·
+  4 bedrooms · 3 bathrooms · sleeps 14 · 8 acres at the foot of Iron Mountain · hiking trails ·
+  horseshoe pit · pub-style arcade · **Boulder Oak**, a private 3-hole, par 9 disc golf course for guests only ·
+  hosted by Cory and Carissa. MR page: https://farmhousegetaways.com/mountain-retreat
+- The "HDR MR" Drive images are AI-enhanced versions of real photos. Everything shown is real (confirmed 2026-10-04).
+  Use Instagram's AI label when posting AI-enhanced images.
 - RBR has a fire pit (Carissa's clip `6sec_FirePit_Strafe_RBR.mp4`).
 
 ## Basics
