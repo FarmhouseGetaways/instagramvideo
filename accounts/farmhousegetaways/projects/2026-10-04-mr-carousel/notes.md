@@ -43,3 +43,12 @@ Hook on slide 1 only.
 Ramona CA · sleeps 14 · 4 bd / 3 ba · 8 acres · foot of Iron Mountain · hiking trails · horseshoe pit ·
 pub-style arcade · Boulder Oak private 3-hole course for guests.
 The hot tub and fire pit show in slide 1. Want them in the caption too?
+
+---
+
+## Video version (Reel + Story), 17s, silent for in-app music
+Hook: "This getaway comes with its own disc golf course" · day-to-night flow: aerial → disc golf
+in golden hour → string lights at dusk → lit bridge → arcade → game room · end card
+"Mountain Retreat · Ramona, CA · Sleeps 14". Wide photos glide across the vertical frame.
+**Reel caption:** reuse the carousel caption. **Sound:** a warm, upbeat acoustic or lo-fi track, added in-app.
+Use the AI info label (AI-enhanced images).

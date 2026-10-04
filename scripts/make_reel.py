@@ -123,6 +123,20 @@ def render_clip(clip, idx, default_fit, tmp, default_grade="crisp"):
     speed = float(clip.get("speed", 1.0))
     is_image = os.path.splitext(src)[1].lower() in IMAGE_EXT
 
+    if is_image and clip.get("motion", "push").startswith("pan"):
+        # Glide across a wide photo inside the 9:16 frame (property-tour move)
+        dur = float(clip.get("dur", 2.5))
+        g = GRADES[clip.get("grade", default_grade)]
+        sign = "" if clip["motion"] == "pan_lr" else "1-"
+        vf = (f"scale=-2:1920:flags=lanczos,crop=1080:1920:x='(iw-1080)*({sign}t/{dur:.3f})*0.85+(iw-1080)*0.075':y=0,"
+              + (g + "," if g else "") + "fps=30,format=yuv420p,setsar=1")
+        run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", "30", "-i", src,
+             "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
+             "-filter_complex", f"[0:v]{vf}[v]", "-map", "[v]", "-map", "1:a",
+             "-t", f"{dur:.3f}", *X264, "-preset", "veryfast", "-crf", "16",
+             "-r", "30", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", out])
+        return out, dur
+
     if is_image:
         dur = float(clip.get("dur", 2.5))
         frames = int(dur * 30)

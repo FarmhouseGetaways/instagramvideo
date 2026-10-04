@@ -1,0 +1,67 @@
+{
+  "format": "story",
+  "output": "work/out/mr_carousel/MR_story.mp4",
+  "hook": {
+    "text": "This getaway comes with its own disc golf course",
+    "dur": 2.6
+  },
+  "style": {
+    "hook_style": "box"
+  },
+  "captions": false,
+  "mute_output": true,
+  "clips": [
+    {
+      "src": "work/raw/mr_carousel/01.jpg",
+      "motion": "pan_lr",
+      "dur": 2.6
+    },
+    {
+      "src": "work/raw/mr_carousel/03.png",
+      "dur": 1.5
+    },
+    {
+      "src": "work/raw/mr_carousel/05.png",
+      "dur": 1.5
+    },
+    {
+      "src": "work/raw/mr_carousel/06.png",
+      "dur": 1.5
+    },
+    {
+      "src": "work/raw/mr_carousel/04.png",
+      "motion": "pan_rl",
+      "dur": 1.5
+    },
+    {
+      "src": "work/raw/mr_carousel/02.png",
+      "motion": "pan_lr",
+      "dur": 1.5
+    },
+    {
+      "src": "work/raw/mr_carousel/08.png",
+      "motion": "pan_rl",
+      "dur": 1.5
+    },
+    {
+      "src": "work/raw/mr_carousel/07.png",
+      "motion": "pan_lr",
+      "dur": 1.5
+    },
+    {
+      "src": "work/raw/mr_carousel/10.png",
+      "motion": "pan_rl",
+      "dur": 1.5
+    },
+    {
+      "src": "work/raw/mr_carousel/09.png",
+      "motion": "pan_lr",
+      "dur": 2.4
+    }
+  ],
+  "end_text": {
+    "text": "Mountain Retreat \u00b7 Ramona, CA \u00b7 Sleeps 14",
+    "dur": 2.2
+  },
+  "cover": 1.2
+}
