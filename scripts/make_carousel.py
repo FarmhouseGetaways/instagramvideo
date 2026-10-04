@@ -7,12 +7,15 @@ Usage: python3 scripts/make_carousel.py plan.json
   "output_dir": "work/out/mr_carousel",
   "ratio": "4:5",                       # 4:5 (1080x1350) | 1:1 (1080x1080)
   "grade": "crisp",
-  "hook": {"text": "3 holes of disc golf. 1 arcade. Sleeps 14.", "position": "top"},
+  "hook": {"text": "3 holes of disc golf. 1 arcade.", "position": "top"},
   "slides": [
-    {"src": "work/raw/hdr_mr/mountain front by cu.jpg", "focus_x": 0.5, "focus_y": 0.5, "zoom": 1.0}
+    {"src": "work/raw/hdr_mr/mountain front by cu.jpg", "focus_x": 0.5, "focus_y": 0.5, "zoom": 1.0},
+    {"src": "work/raw/hdr_mr/basket.png", "text": {"text": "Your own private course", "position": "bottom", "size": 64}}
   ]
 }
 focus_x/focus_y (0–1) pick which part of a wide photo stays in the crop. zoom > 1 crops tighter.
+A slide's "text" puts words on that slide in the hook style (position top|bottom, size in px).
+Set CAROUSEL_FONT to the Montserrat ExtraBold path when it isn't at the Linux default.
 """
 import json
 import os
@@ -25,7 +28,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from make_reel import GRADES  # noqa: E402  (same house look as the videos)
 
 SIZES = {"4:5": (1080, 1350), "1:1": (1080, 1080)}
-FONT = "/usr/share/fonts/truetype/montserrat/Montserrat-ExtraBold.ttf"
+FONT = os.environ.get("CAROUSEL_FONT", "/usr/share/fonts/truetype/montserrat/Montserrat-ExtraBold.ttf")
 
 
 def crop_box(w, h, tw, th, fx, fy, zoom):
@@ -48,10 +51,9 @@ def grade(src_png, dst_jpg, grade_name):
                     "-q:v", "1", "-pix_fmt", "yuvj444p", dst_jpg], check=True)
 
 
-def draw_hook(img, text, position):
+def draw_hook(img, text, position, size=72):
     d = ImageDraw.Draw(img)
     W, H = img.size
-    size = 72
     font = ImageFont.truetype(FONT, size)
     words, lines, line = text.split(), [], ""
     for w in words:
@@ -80,7 +82,7 @@ def draw_hook(img, text, position):
 
 
 def main():
-    plan = json.load(open(sys.argv[1]))
+    plan = json.load(open(sys.argv[1], encoding="utf-8"))
     tw, th = SIZES[plan.get("ratio", "4:5")]
     out_dir = plan["output_dir"]
     os.makedirs(out_dir, exist_ok=True)
@@ -94,8 +96,10 @@ def main():
         out = os.path.join(out_dir, f"slide_{n:02d}.jpg")
         grade(tmp_png, out, s.get("grade", plan.get("grade", "crisp")))
         os.remove(tmp_png)
-        if n == 1 and plan.get("hook", {}).get("text"):
-            img = draw_hook(Image.open(out).convert("RGB"), plan["hook"]["text"], plan["hook"].get("position", "top"))
+        # per-slide "text" (same style as the hook); the plan-level hook still fills slide 1 when it has none
+        t = s.get("text") or (plan.get("hook") if n == 1 else None)
+        if t and t.get("text"):
+            img = draw_hook(Image.open(out).convert("RGB"), t["text"], t.get("position", "top"), t.get("size", 72))
             img.save(out, quality=95, subsampling=0)
         outputs.append(out)
         print(out)

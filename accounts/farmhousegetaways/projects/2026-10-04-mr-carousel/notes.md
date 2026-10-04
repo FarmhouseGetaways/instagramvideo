@@ -76,3 +76,12 @@ Use the AI info label (AI-enhanced images).
 - The course map slide was re-rendered from boulderoakdiscgolf `print/course-guide.html?page=1` at commit 905c18c, so it says
   GAME ROOM, not GARAGE. Never call MR's second building a garage.
 - Slides: `Downloads/MR carousel/slides_V4/`. Review PDF: `MR_Carousel_Review_V3.pdf`. Rebuilt in a fresh Instagram tab, stopped at Share.
+
+## V5: words on the photos, aimed at OC & LA disc golfers (Oct 4, Cory)
+- Cory: the carousel should attract disc golfers from Orange and LA counties to come stay and play. They're likely solo.
+  Words go on most images, but not the Boulder Oak web page. The course map got none either, since it's already text-heavy.
+- Slide words: 1 "OC & LA disc golfers: stay and play in Ramona" · 2 "A private disc golf course, just for guests" ·
+  3 "Play it as many times as you like" · 4 "Three holes among the granite and the oaks" · 5 "3 holes · par 9 · 740 ft" ·
+  8 "Then unwind in the game room" · 9 "The 19th hole: a pub-style arcade".
+- New caption in `caption_v5.txt`. It uses Cory's sleeping line (4 bedrooms, 6 beds, 2 pullout couches) in place of "sleeps 14".
+- Review PDF `MR_Carousel_Review_V3.pdf`. Rebuilt in Instagram, stopped at Share. Threads cross-post off (caption > 500 chars).
