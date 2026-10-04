@@ -15,7 +15,7 @@ Hook on slide 1 only.
 | 7 | Blacklight arcade wall |
 | 8 | Lit bridge at night |
 | 9 | Game room lounge |
-| 10 | Arcade garage: air hockey, foosball, cabinets |
+| 10 | Game room arcade: air hockey, foosball, cabinets |
 
 ## Caption
 > Sleeps 14 on eight acres at the foot of Iron Mountain 🏔️
@@ -70,3 +70,9 @@ Use the AI info label (AI-enhanced images).
 - Cory removed V2 slides 8 (three hole signs) and 11 (final "Tied at 9" scorecard). Plan: `plan_carousel_v3.json`.
   Slides: `Downloads/MR carousel/slides_V3/`. Review PDF: `MR_Carousel_Review_V2.pdf`.
 - Removed in the open Instagram composer too. Caption and AI label carried over. Still stopped at Share, on hold for Carissa.
+
+## V4: 9 slides (Oct 4, Cory)
+- Cory removed V3 slides 6 (basket with bridge), 9 (hole 1 scorecard) and 10 (lit bridge at night). Plan: `plan_carousel_v4.json`.
+- The course map slide was re-rendered from boulderoakdiscgolf `print/course-guide.html?page=1` at commit 905c18c, so it says
+  GAME ROOM, not GARAGE. Never call MR's second building a garage.
+- Slides: `Downloads/MR carousel/slides_V4/`. Review PDF: `MR_Carousel_Review_V3.pdf`. Rebuilt in a fresh Instagram tab, stopped at Share.
