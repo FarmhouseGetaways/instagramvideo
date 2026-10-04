@@ -100,3 +100,6 @@ All carousel files moved from `Downloads/MR carousel` to `Z:/Farmhouse Getaways/
 Dropped the lounge and the bridge ("Experience Mountain Retreat…"). The lounge's NES/Xbox line moved onto the arcade slide,
 and slide 2 now ends "…at the base of Iron Mountain". Plan `plan_carousel_v9.json`, slides on Z: `MR Carousel/slides_V9/`,
 review PDF `MR_Carousel_Review_V5.pdf`. Rebuilt in Instagram, stopped at Share.
+
+## V10 (Oct 4, Cory)
+Slide 6 now reads "Adventure and play right out the back door." Plan `plan_carousel_v10.json`, slides Z: `MR Carousel/slides_V10/`, review `MR_Carousel_Review_V6.pdf`. Rebuilt in Instagram, stopped at Share.
