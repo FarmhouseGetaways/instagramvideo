@@ -41,6 +41,13 @@ Track results in `tracking/results.csv`. The plan is `plan/2026-10-14-day-plan.m
    using every tool and all the knowledge here to make "our masterpiece".
 4. **Visual standard: a really crisp, HDR-quality look.** See `knowledge/look-and-grade.md`.
 
+## "Finished" means built in Instagram (2026-10-04)
+When Carissa asks for a carousel, Reel, Story or post, the job isn't done until it's **built inside
+Instagram on the right account**: media uploaded and ordered, cropped, caption, hashtags, audio, AI label,
+right up to the **Share** button. Then **stop and ask her** before tapping Share. Never post without her yes.
+This needs a session that can control her logged-in browser: Claude Desktop with Claude in Chrome, the
+built-in browser, or computer use. A cloud session can't, so say so and prepare everything else.
+
 ## How we work
 1. Carissa uploads footage and describes what she wants.
 2. Claude reviews the footage and flags anything that looks off (framing,
