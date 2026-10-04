@@ -88,3 +88,10 @@ Use the AI info label (AI-enhanced images).
 
 ## File location (Oct 4)
 All carousel files moved from `Downloads/MR carousel` to `Z:/Farmhouse Getaways/1. Marketing/0. Social Media 2.0/3. Social Media/` (current slides in `MR Carousel/`, older sets in `Archived/MR Carousel/`). Earlier `Downloads/...` paths in these notes are stale.
+
+## V6–V8: Cory's own slide words (Oct 4)
+- Cory wrote the text and order himself. V6 was the first build, V7 changed slide 3 to "The 19th hole: …", and V8 moved
+  "Night play unlocked" to slide 5. Plan: `plan_carousel_v8.json`. Slides: Z: `MR Carousel/slides_V8/`.
+- Numbered lists in chat were hard for Cory to write. The lettered picture key (`MR_Carousel_Picture_Key_V1.jpg`, A–N) is the way
+  to ask for slide orders now: "letter: text", one per line, in order.
+- Built in Instagram, stopped at Share, AI label on. Threads cross-post still off (caption 522 chars).

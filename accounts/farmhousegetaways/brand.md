@@ -13,6 +13,10 @@ _Fill in from Carissa's answers. Update after every project with what she liked 
   (retired; don't use it in new work). MR's second building is the **Game room** (soon "Loft Lodging"), never "garage".
 - **MR disc golf audience (Cory, 2026-10-04):** disc golfers from Orange and Los Angeles counties, coming out to stay and play.
   They're likely solo, so speak to one player; no "bring the crew" angles. Don't state drive times (not confirmed).
+- **MR / Boulder Oak, from Cory (2026-10-04):** 24/7 play, including night play (string lights). Iron Mountain and Mount Woodson
+  trails are 3 miles away. The game room is an '80s-style game pub ("the 19th hole") with a video game museum, arcade games,
+  an NES at the booth and over 100 of the latest Xbox games. Players can keep score on UDisc, or use the Boulder Oak scorecard,
+  which emails everyone a keepsake with round stats. Boulder Oak is exclusive to Mountain Retreat guests.
 - The "HDR MR" Drive images are AI-enhanced versions of real photos. Everything shown is real (confirmed 2026-10-04).
   Use Instagram's AI label when posting AI-enhanced images.
 - RBR has a fire pit (Carissa's clip `6sec_FirePit_Strafe_RBR.mp4`).
