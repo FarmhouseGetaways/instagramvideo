@@ -65,3 +65,8 @@ Use the AI info label (AI-enhanced images).
   Desktop web has no music option for photo carousels, so music has to be added in the phone app.
 - Local rebuild on Windows needs ffmpeg (`pip install imageio-ffmpeg`) and Montserrat ExtraBold. Override
   `make_carousel.FONT` instead of editing the Linux path in the script.
+
+## V3: 12 slides (Oct 4, Cory)
+- Cory removed V2 slides 8 (three hole signs) and 11 (final "Tied at 9" scorecard). Plan: `plan_carousel_v3.json`.
+  Slides: `Downloads/MR carousel/slides_V3/`. Review PDF: `MR_Carousel_Review_V2.pdf`.
+- Removed in the open Instagram composer too. Caption and AI label carried over. Still stopped at Share, on hold for Carissa.
