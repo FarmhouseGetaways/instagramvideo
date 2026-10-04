@@ -1,3 +1,10 @@
+> **Superseded 2026-10-04.** Instagram stats now live in the farmhouse-admin app's **Social tab**
+> (https://farmhouse-admin.netlify.app/#social, repo FarmhouseGetaways/farmhouse-admin, see its CLAUDE.md
+> "Social tab"). Accounts connect there with a button, tokens are stored and refreshed by that app, and the
+> `IG_TOKEN_*` cloud env vars below were never created. Meta app: "Mini Barn Market" (1021799293794405),
+> Instagram app id 869115999396438, Development mode with each account as an Instagram Tester.
+> Publishing is not wired up there (read-only scopes).
+
 # Connecting the Instagram API (publishing + view counts)
 
 This gives Claude **token-based** access: no password, revocable anytime, and

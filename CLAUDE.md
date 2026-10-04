@@ -85,8 +85,9 @@ built-in browser, or computer use. A cloud session can't, so say so and prepare 
 - Never commit passwords or tokens to this repo.
 - Browser work on Instagram goes through Carissa's own logged-in browser
   (Claude in Chrome / the desktop app's built-in browser), not a scripted login.
-- API tokens (publishing + Insights) live in the cloud environment's settings as
-  `IG_TOKEN_MBM`, `IG_TOKEN_FG`, `IG_TOKEN_FFF`. See `docs/instagram-api-setup.md`.
+- **Instagram stats (views, reach, followers, Stories) are on farmhouse-admin's Social tab** (since 2026-10-04,
+  @farmhousegetaways + @minibarnmarket). The old `IG_TOKEN_*` plan in `docs/instagram-api-setup.md` is superseded.
+  Results for `tracking/results.csv` can be read from there.
 
 ## Tooling
 - `scripts/make_reel.py plan.json`: the editing engine (Reels + Stories, captions,
