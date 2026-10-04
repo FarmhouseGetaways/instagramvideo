@@ -103,3 +103,6 @@ review PDF `MR_Carousel_Review_V5.pdf`. Rebuilt in Instagram, stopped at Share.
 
 ## V10 (Oct 4, Cory)
 Slide 6 now reads "Adventure and play right out the back door." Plan `plan_carousel_v10.json`, slides Z: `MR Carousel/slides_V10/`, review `MR_Carousel_Review_V6.pdf`. Rebuilt in Instagram, stopped at Share.
+
+## V11 (Oct 4, Cory)
+Slide 8's text moved to the center of the image (new `"position": "center"` in make_carousel.py). Plan `plan_carousel_v11.json`, slides Z: `MR Carousel/slides_V11/`, review `MR_Carousel_Review_V7.pdf`. Only slide 8 was swapped in the open Instagram composer.

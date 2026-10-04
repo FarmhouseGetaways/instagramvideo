@@ -14,7 +14,7 @@ Usage: python3 scripts/make_carousel.py plan.json
   ]
 }
 focus_x/focus_y (0–1) pick which part of a wide photo stays in the crop. zoom > 1 crops tighter.
-A slide's "text" puts words on that slide in the hook style (position top|bottom, size in px).
+A slide's "text" puts words on that slide in the hook style (position top|center|bottom, size in px).
 Set CAROUSEL_FONT to the Montserrat ExtraBold path when it isn't at the Linux default.
 """
 import json
@@ -66,7 +66,7 @@ def draw_hook(img, text, position, size=72):
     lines.append(line)
     lh = int(size * 1.22)
     block_h = lh * len(lines)
-    y0 = 110 if position == "top" else H - block_h - 150
+    y0 = {"top": 110, "center": (H - block_h) // 2}.get(position, H - block_h - 150)
     # soft dark gradient behind the text so it reads on any photo
     grad = Image.new("L", (1, block_h + 220))
     for i in range(grad.height):
