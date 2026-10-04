@@ -1,0 +1,22 @@
+{
+  "output_dir": "work/out/mr_carousel_v2",
+  "ratio": "4:5",
+  "grade": "crisp",
+  "hook": {"text": "Sleeps 14. Eight acres. Disc golf and a pub-style arcade.", "position": "top"},
+  "slides": [
+    {"src": "work/raw/mr_carousel/01.jpg", "focus_x": 0.47},
+    {"src": "work/raw/mr_carousel/02.png", "focus_x": 0.42},
+    {"src": "work/raw/mr_carousel/03.png"},
+    {"src": "work/raw/mr_carousel/04.png", "focus_x": 0.52},
+    {"src": "work/raw/mr_carousel/05.png", "focus_y": 0.55},
+    {"src": "work/raw/mr_carousel/06.png"},
+    {"src": "work/raw/mr_carousel/w1_hero.png", "grade": "none"},
+    {"src": "work/raw/mr_carousel/w2_holes.png", "grade": "none"},
+    {"src": "work/raw/mr_carousel/w3_map.png", "grade": "none"},
+    {"src": "work/raw/mr_carousel/w4_score_hole.png", "grade": "none"},
+    {"src": "work/raw/mr_carousel/w5_score_final.png", "grade": "none"},
+    {"src": "work/raw/mr_carousel/08.png", "focus_x": 0.45},
+    {"src": "work/raw/mr_carousel/09.png", "focus_x": 0.62},
+    {"src": "work/raw/mr_carousel/10.png", "focus_x": 0.5}
+  ]
+}

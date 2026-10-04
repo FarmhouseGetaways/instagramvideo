@@ -52,3 +52,16 @@ in golden hour → string lights at dusk → lit bridge → arcade → game room
 "Mountain Retreat · Ramona, CA · Sleeps 14". Wide photos glide across the vertical frame.
 **Reel caption:** reuse the carousel caption. **Sound:** a warm, upbeat acoustic or lo-fi track, added in-app.
 Use the AI info label (AI-enhanced images).
+
+## V2: 14 slides, built in Instagram (Oct 4, Desktop session)
+- The chat copies of the 10 slides were never saved, so the slides were rebuilt locally from the originals
+  in `Downloads/MR carousel` with `plan_carousel_v2.json`. Output: `Downloads/MR carousel/slides_V2/`.
+- Slides 7–11 are new: Boulder Oak site hero, the three hole signs, the course map (course guide page 1),
+  and two scorecard phone screenshots (hole 1 in play, final "Tied at 9"). These use `"grade": "none"`.
+  Phone screenshots sit on an edge-matched dark background instead of being cropped.
+- The original slide 7 (blacklight arcade) wasn't on the Desktop PC, so it's left out. `MR_FirePit_V1.png` is in
+  the folder but was never in the plan, so it isn't used either.
+- Built on @farmhousegetaways in Chrome: 4:5 crop, caption pasted exactly, AI label on. Stopped at Share.
+  Desktop web has no music option for photo carousels, so music has to be added in the phone app.
+- Local rebuild on Windows needs ffmpeg (`pip install imageio-ffmpeg`) and Montserrat ExtraBold. Override
+  `make_carousel.FONT` instead of editing the Linux path in the script.
