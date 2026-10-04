@@ -85,3 +85,6 @@ Use the AI info label (AI-enhanced images).
   8 "Then unwind in the game room" · 9 "The 19th hole: a pub-style arcade".
 - New caption in `caption_v5.txt`. It uses Cory's sleeping line (4 bedrooms, 6 beds, 2 pullout couches) in place of "sleeps 14".
 - Review PDF `MR_Carousel_Review_V3.pdf`. Rebuilt in Instagram, stopped at Share. Threads cross-post off (caption > 500 chars).
+
+## File location (Oct 4)
+All carousel files moved from `Downloads/MR carousel` to `Z:/Farmhouse Getaways/1. Marketing/0. Social Media 2.0/3. Social Media/` (current slides in `MR Carousel/`, older sets in `Archived/MR Carousel/`). Earlier `Downloads/...` paths in these notes are stale.
