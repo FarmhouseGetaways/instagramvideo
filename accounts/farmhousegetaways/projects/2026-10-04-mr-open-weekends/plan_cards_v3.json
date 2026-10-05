@@ -1,0 +1,37 @@
+{
+ "out_dir": "Z:/Farmhouse Getaways/1. Marketing/0. Social Media 2.0/3. Social Media/MR Open Weekends/V3",
+ "font_bold": "C:/Users/coryd/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Bold.ttf",
+ "font_black": "C:/Users/coryd/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Black.ttf",
+ "cards": [
+  {
+   "name": "story_03_facebook",
+   "size": "story",
+   "frame": true,
+   "leave_link_space": true,
+   "src": "C:\\Users\\coryd\\.claude\\uploads\\52366d31-6fd3-450e-ae95-14d2850179fd\\4c2d1d9d-image.jpg",
+   "kicker": "",
+   "title": "Book direct for less!",
+   "lines": [
+    "…and save even more with 15% off.",
+    "Code FALL15 · stays through Nov 22"
+   ],
+   "footer": "Swipe up to check dates",
+   "focus_y": 0.45
+  },
+  {
+   "name": "story_03_instagram",
+   "size": "story",
+   "frame": true,
+   "leave_link_space": false,
+   "src": "C:\\Users\\coryd\\.claude\\uploads\\52366d31-6fd3-450e-ae95-14d2850179fd\\4c2d1d9d-image.jpg",
+   "kicker": "",
+   "title": "Book direct for less!",
+   "lines": [
+    "…and save even more with 15% off.",
+    "Code FALL15 · stays through Nov 22"
+   ],
+   "footer": "Book at farmhousegetaways.com",
+   "focus_y": 0.45
+  }
+ ]
+}

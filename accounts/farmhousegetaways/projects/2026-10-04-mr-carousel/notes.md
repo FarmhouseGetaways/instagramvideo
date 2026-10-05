@@ -106,3 +106,6 @@ Slide 6 now reads "Adventure and play right out the back door." Plan `plan_carou
 
 ## V11 (Oct 4, Cory)
 Slide 8's text moved to the center of the image (new `"position": "center"` in make_carousel.py). Plan `plan_carousel_v11.json`, slides Z: `MR Carousel/slides_V11/`, review `MR_Carousel_Review_V7.pdf`. Only slide 8 was swapped in the open Instagram composer.
+
+## V12 (Oct 5, Cory)
+Slide 3 now opens "Boulder Oak Arcade:" instead of "The 19th hole:". Plan `plan_carousel_v12.json`, slides Z: `MR Carousel/slides_V12/`, review `MR_Carousel_Review_V8.pdf`. Rebuilt in Instagram, stopped at Share.
