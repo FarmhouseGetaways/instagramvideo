@@ -1,0 +1,20 @@
+{"out_dir": "Z:/Farmhouse Getaways/1. Marketing/0. Social Media 2.0/3. Social Media/MR Open Weekends/V1",
+ "font_bold": "C:/Users/coryd/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Bold.ttf",
+ "font_black": "C:/Users/coryd/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Black.ttf",
+ "cards": [
+  {"name": "story_01", "size": "story", "src": "Z:/Farmhouse Getaways/Photos & Video/MR/Professional photos by Ben 2022/_DSC0165.jpg", "focus_x": 0.62, "panel": "top",
+   "kicker": "Mountain Retreat \u00b7 Ramona, CA", "title": "Fall weekends are open",
+   "lines": ["An arcade, disc golf, a hot tub and 8 acres for your group."]},
+  {"name": "story_02", "size": "story", "src": "Z:/Farmhouse Getaways/Photos & Video/MR/Professional photos by Ben 2022/_DSC0216.jpg", "focus_x": 0.45, "panel": "middle",
+   "kicker": "Open weekends", "title": "Pick yours", "title_size": 96, "line_size": 64,
+   "lines": ["Oct 23 \u2013 25", "Oct 30 \u2013 Nov 1", "Nov 6 \u2013 8", "Nov 20 \u2013 22"],
+   "footer": "Friday to Sunday \u00b7 weeknights open too"},
+  {"name": "story_03", "size": "story", "src": "Z:/Farmhouse Getaways/Photos & Video/MR/Professional photos by Ben 2022/_DSC0144.jpg", "focus_x": 0.12, "panel": "top", "leave_link_space": true,
+   "kicker": "Book direct", "title": "15% off with code FALL15",
+   "lines": ["For stays through Nov 22.", "No booking fees."],
+   "footer": "Tap the link below to check dates"},
+  {"name": "feed_01", "size": "feed", "src": "Z:/Farmhouse Getaways/Photos & Video/MR/Professional photos by Ben 2022/_DSC0165.jpg", "focus_x": 0.6, "panel": "middle",
+   "kicker": "Mountain Retreat \u00b7 Ramona, CA", "title": "Fall weekends are open", "line_size": 52,
+   "lines": ["Oct 23\u201325 \u00b7 Oct 30\u2013Nov 1", "Nov 6\u20138 \u00b7 Nov 20\u201322"],
+   "footer": "15% off with code FALL15 \u00b7 book direct"}
+ ]}
