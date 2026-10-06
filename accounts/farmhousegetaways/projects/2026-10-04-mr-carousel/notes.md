@@ -127,3 +127,6 @@ Mountain Retreat" · 6 "Adventure and play right out the back door." · 7 "Keep 
 "Disc Golf", "San Diego" and "700 sq ft" on one line; make_carousel now splits on plain spaces only).
 Reel V2 = same slides + Adobe "Acoustic Dream". Both queued as drafts (no time) on farmhouse-admin's Publish tab.
 Phone copies in Downloads/MR Carousel for iPhone. The Z: share was offline at the time; copy slides_V13 + Reel V2 there later.
+
+## V14 + Reel V3 (Oct 6, Cory)
+Swapped slides 4 and 5: the Boulder Oak page ("Exclusive to guests of Mountain Retreat") now comes before "Night play unlocked." Plan `plan_carousel_v14.json`. Z: `MR Carousel/slides_V14`, `Reel/MR_Reel_V3.mp4`, review `MR_Carousel_Review_V10.pdf`. Both drafts replaced on the Publish tab (no time set).

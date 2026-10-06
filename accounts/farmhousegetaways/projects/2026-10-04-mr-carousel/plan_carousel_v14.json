@@ -1,0 +1,77 @@
+{
+  "output_dir": "work/out/mr_carousel_v14",
+  "ratio": "4:5",
+  "grade": "crisp",
+  "slides": [
+    {
+      "src": "work/raw/mr_carousel/03.png",
+      "text": {
+        "text": "Check out this Disc Golf Vacation Rental in San Diego",
+        "position": "top",
+        "size": 72
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/01.jpg",
+      "focus_x": 0.47,
+      "text": {
+        "text": "A private course on a beautiful 8-acre property at the base of Iron Mountain",
+        "position": "top",
+        "size": 64
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/10.png",
+      "focus_x": 0.5,
+      "text": {
+        "text": "It also has a private 700 sq ft arcade.",
+        "position": "top",
+        "size": 68
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/w1_hero.png",
+      "grade": "none",
+      "text": {
+        "text": "Exclusive to guests of Mountain Retreat",
+        "position": "bottom",
+        "size": 64
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/02.png",
+      "focus_x": 0.42,
+      "text": {
+        "text": "Night play unlocked.",
+        "position": "top",
+        "size": 72
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/06.png",
+      "text": {
+        "text": "Adventure and play right out the back door.",
+        "position": "top",
+        "size": 64
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/w3_map.png",
+      "grade": "none",
+      "text": {
+        "text": "Keep score with our app, or enter it on UDisc.",
+        "position": "bottom",
+        "size": 60
+      }
+    },
+    {
+      "src": "work/raw/mr_carousel/05.png",
+      "focus_y": 0.55,
+      "text": {
+        "text": "Iron Mountain and Mount Woodson trails are 3 miles away.",
+        "position": "center",
+        "size": 58
+      }
+    }
+  ]
+}
