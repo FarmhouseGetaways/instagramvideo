@@ -55,7 +55,8 @@ def draw_hook(img, text, position, size=72):
     d = ImageDraw.Draw(img)
     W, H = img.size
     font = ImageFont.truetype(FONT, size)
-    words, lines, line = text.split(), [], ""
+    # Split on plain spaces only, so a non-breaking space (U+00A0) keeps e.g. "700 sq ft" on one line.
+    words, lines, line = [w for w in text.split(" ") if w], [], ""
     for w in words:
         trial = f"{line} {w}".strip()
         if d.textlength(trial, font=font) <= W - 200 or not line:

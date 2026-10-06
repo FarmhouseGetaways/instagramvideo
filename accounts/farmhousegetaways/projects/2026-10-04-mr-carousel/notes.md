@@ -118,3 +118,12 @@ Slide 3 now opens "Boulder Oak Arcade:" instead of "The 19th hole:". Plan `plan_
 - Motion Array: the logged-in account has NO active subscription (download asks to subscribe). Adobe Stock free audio works.
 - Instagram's own song library can't be added from outside the app, so licensed music baked into a Reel is the only
   fully automatic way to post with music.
+
+## V13 + Reel V2 (Oct 6, Cory)
+Slide words now: 1 "Check out this Disc Golf Vacation Rental in San Diego" · 2 "A private course on a beautiful 8-acre property
+at the base of Iron Mountain" · 3 "It also has a private 700 sq ft arcade." · 4 "Night play unlocked." · 5 "Exclusive to guests of
+Mountain Retreat" · 6 "Adventure and play right out the back door." · 7 "Keep score with our app, or enter it on UDisc." ·
+8 "Iron Mountain and Mount Woodson trails are 3 miles away." Plan `plan_carousel_v13.json` (non-breaking spaces keep
+"Disc Golf", "San Diego" and "700 sq ft" on one line; make_carousel now splits on plain spaces only).
+Reel V2 = same slides + Adobe "Acoustic Dream". Both queued as drafts (no time) on farmhouse-admin's Publish tab.
+Phone copies in Downloads/MR Carousel for iPhone. The Z: share was offline at the time; copy slides_V13 + Reel V2 there later.

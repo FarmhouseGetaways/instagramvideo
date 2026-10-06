@@ -14,7 +14,7 @@ _Fill in from Carissa's answers. Update after every project with what she liked 
 - **MR disc golf audience (Cory, 2026-10-04):** disc golfers from Orange and Los Angeles counties, coming out to stay and play.
   They're likely solo, so speak to one player; no "bring the crew" angles. Don't state drive times (not confirmed).
 - **MR / Boulder Oak, from Cory (2026-10-04):** 24/7 play, including night play (string lights). Iron Mountain and Mount Woodson
-  trails are 3 miles away. The game room's arcade is called **Boulder Oak Arcade** (Cory, 2026-10-05; not "the 19th hole"). It's an '80s-style game pub with a video game museum, arcade games,
+  trails are 3 miles away. The game room's arcade is called **Boulder Oak Arcade** (Cory, 2026-10-05; not "the 19th hole"). It's a private 700 sq ft arcade (Cory, 2026-10-06). It's an '80s-style game pub with a video game museum, arcade games,
   an NES at the booth and over 100 of the latest Xbox games. Players can keep score on UDisc, or use the Boulder Oak scorecard,
   which emails everyone a keepsake with round stats. Boulder Oak is exclusive to Mountain Retreat guests.
 - The "HDR MR" Drive images are AI-enhanced versions of real photos. Everything shown is real (confirmed 2026-10-04).
