@@ -109,3 +109,12 @@ Slide 8's text moved to the center of the image (new `"position": "center"` in m
 
 ## V12 (Oct 5, Cory)
 Slide 3 now opens "Boulder Oak Arcade:" instead of "The 19th hole:". Plan `plan_carousel_v12.json`, slides Z: `MR Carousel/slides_V12/`, review `MR_Carousel_Review_V8.pdf`. Rebuilt in Instagram, stopped at Share.
+
+## Demo Reel with licensed music (Oct 5)
+- Built from the V12 slides: each 4:5 slide centered on a blurred 9:16 copy of itself, slow zoom, 0.5s crossfades,
+  2.8s per slide, 18.9s total. Music: Adobe Stock "Acoustic Dream" by Alex Saym (asset 511566980, a FREE Adobe Stock
+  track, licensed on Cory's Adobe login), loudness-normalised to -14 LUFS, faded out at the end.
+- Files: Z: `MR Carousel/Reel/MR_Reel_demo_V1.mp4` (full) and `_share.mp4` (chat-size). Not posted.
+- Motion Array: the logged-in account has NO active subscription (download asks to subscribe). Adobe Stock free audio works.
+- Instagram's own song library can't be added from outside the app, so licensed music baked into a Reel is the only
+  fully automatic way to post with music.
